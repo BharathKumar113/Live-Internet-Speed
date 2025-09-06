@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Live Internet Speed (Flask)</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>🚀 Live Internet/Wi-Fi Speed</h1>
+      <p>Click “Run Test” for full Ping/Download/Upload. “Quick Ping” gives instant current latency.</p>
+
+      <div class="row">
+        <button id="run" class="btn">Run Test</button>
+        <button id="quick" class="btn secondary">Quick Ping</button>
+      </div>
+
+      <div class="grid">
+        <div class="tile">
+          <div>Ping</div>
+          <div id="ping" class="big">—</div>
+          <div id="pingStatus" class="ok"></div>
+        </div>
+        <div class="tile">
+          <div>Download</div>
+          <div id="down" class="big">—</div>
+          <div class="ok">Mbps</div>
+        </div>
+        <div class="tile">
+          <div>Upload</div>
+          <div id="up" class="big">—</div>
+          <div class="ok">Mbps</div>
+        </div>
+      </div>
+
+      <div id="server" class="server"></div>
+
+      <div class="log" id="log"></div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

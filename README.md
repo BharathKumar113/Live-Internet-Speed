@@ -1,4 +1,4 @@
-# ⚡ Live Internet Speed  
+#  Live Internet Speed  
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg?logo=python&logoColor=white)  
 ![Flask](https://img.shields.io/badge/flask-2.0+-black.svg?logo=flask)  
@@ -14,18 +14,18 @@ It uses the [`speedtest-cli`](https://github.com/sivel/speedtest-cli) library to
 
 ---
 
-## ✨ Why this project?  
+##  Why this project?  
 
-🌍 In today’s world, stable internet is essential.  
-📌 This project helps you:  
-- 📊 Measure your **download and upload speeds**.  
-- ⏱️ Check real-time **latency (ping)** to external servers.  
-- 🌐 Identify the **best server** available near you.  
-- 🖥️ Run your own speed test without depending on third-party websites.  
+ In today’s world, stable internet is essential.  
+ This project helps you:  
+-  Measure your **download and upload speeds**.  
+-  Check real-time **latency (ping)** to external servers.  
+-  Identify the **best server** available near you.  
+-  Run your own speed test without depending on third-party websites.  
 
 ---
 
-## 🚀 Features  
+##  Features  
 
 ✔️ Real-time **download, upload, and ping measurement**    
 ✔️ Uses **Flask + Speedtest.net servers**  
@@ -34,7 +34,7 @@ It uses the [`speedtest-cli`](https://github.com/sivel/speedtest-cli) library to
 
 ---
 
-## 🛠️ How it works  
+##  How it works  
 
 1. The user opens the **Flask web app**.  
 2. `/run_test` endpoint runs a **full internet speed test** using `speedtest-cli`.  
@@ -45,34 +45,34 @@ It uses the [`speedtest-cli`](https://github.com/sivel/speedtest-cli) library to
 
 ---
 
-## 📂 Project Structure  
+##  Project Structure  
 
 ```
-📦 live-internet-speed
- ┣ 📜 app.py             # Main Flask app
- ┣ 📂 templates
- ┃ ┗ 📜 index.html       # User interface
- ┗ 📜 README.md          # Project documentation
+ live-internet-speed
+ ┣  app.py             # Main Flask app
+ ┣  templates
+ ┃ ┗  index.html       # User interface
+ ┗  README.md          # Project documentation
 ```
 
 ---
 
-## ⚡ Installation  
+##  Installation  
 
-### 1️⃣ Clone the repo  
+### 1. Clone the repo  
 ```bash
 git clone https://github.com/BharathKumar113/Live-Internet-Speed.git
 cd Live-Internet-Speed
 ```
 
-### 2️⃣ (Optional) Create a virtual environment  
+### 2. (Optional) Create a virtual environment  
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 ```
 
-### 3️⃣ Install dependencies  
+### 3. Install dependencies  
 ```bash
 pip install -r requirements.txt
 ```
@@ -82,7 +82,7 @@ Or install directly:
 pip install flask speedtest-cli requests
 ```
 
-### 4️⃣ Run the application  
+### 4. Run the application  
 ```bash
 python app.py
 ```
@@ -91,9 +91,9 @@ Visit: **http://127.0.0.1:5000/** in your browser.
 
 ---
 
-## 🎯 Usage Guide  
+##  Usage Guide  
 
-### ✅ Run Full Speed Test  
+###  Run Full Speed Test  
 `GET /run_test` → returns:  
 ```json
 {
@@ -109,7 +109,7 @@ Visit: **http://127.0.0.1:5000/** in your browser.
 }
 ```
 ---
-### ✅ Quick Latency Check  
+###  Quick Latency Check  
 `GET /live_latency` → returns:  
 ```json
 {
@@ -119,7 +119,7 @@ Visit: **http://127.0.0.1:5000/** in your browser.
 ```
 ---
 
-## ⚖️ Notes  
+##  Notes  
 
 - Latency is checked against **Google (generate_204)** endpoint.  
 - Speed values may vary depending on your **ISP, server location, and time of day**.  
